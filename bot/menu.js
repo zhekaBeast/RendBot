@@ -12,20 +12,36 @@ class BotMenu {
     });
     await bot.sendMessage(
       msg.chat.id,
-      "1. Мои объявления.\n2. Мои аренды.\n3. Моя анкета.",
+      "1. Мои объявления\n2. Мои аренды\n3. Моя анкета",
       {
         reply_markup: {
           inline_keyboard: [
             [
               {
                 text: "прекрасный сайт",
-                web_app: { url: process.env.WEBSITE_URL },
+                web_app: {
+                  url: process.env.WEBSITE_URL + `/${msg.from.id}`,
+                },
               },
             ],
           ],
         },
       }
     );
+
+    if (msg?.web_app_data?.data) {
+      try {
+        const data = JSON.parse(msg?.web_app_data?.data);
+        if ((data.res = "сайт говно")) {
+          await bot.sendMessage(msg.chat.id, "сам ты говно");
+          setTimeout(async () => {
+            await bot.sendMessage(msg.chat.id, "ублюдок");
+          }, 1000);
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    }
   }
 }
 
