@@ -34,10 +34,13 @@ bot.onText(/\/site/, async (msg) => {
       const data = JSON.parse(msg?.web_app_data?.data);
       console.log(data);
 
-      if ((data.res = "сайт говно")) {
-        await bot.sendMessage(msg.chat.id, "сам ты говно");
+      if ((data.res = "привет, это приложение")) {
+        await bot.sendMessage(
+          msg.chat.id,
+          "хэй, тут приложение передаёт привет"
+        );
         setTimeout(async () => {
-          await bot.sendMessage(msg.chat.id, "ублюдок");
+          await bot.sendMessage(msg.chat.id, "мило, не так ли?");
         }, 1000);
       }
     } catch (e) {
