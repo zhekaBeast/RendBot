@@ -4,21 +4,24 @@ const botMenu = require("./menu");
 const botOffer = require("./offer");
 const botRent = require("./rent");
 const botProfile = require("./profile");
+const botExcept = require("./exceptions");
 const state = require("./state");
 const isCommand = require("./functions/isCommand");
-var userInfo = new Map();
+var regUserInfo = new Map();
 class Listner {
   async start(bot) {
     bot.on("message", async (msg) => {
       console.log(msg);
       if (isCommand(msg.text)) return;
       const id = msg.from.id;
-      const check = await db.getUser(id);
-      if (check[0] === undefined) return;
-      if (msg.text !== undefined) {
+      const user = await db.getUser(id);
+      if (!user.exists) {
+        botStart.start(bot, msg);
+        return;
+      }
+      if (msg.text) {
         ///Text answers
-
-        switch (check[0].state) {
+        switch (user.state) {
           case state.menuStart:
             switch (msg.text) {
               case "1":
@@ -48,9 +51,9 @@ class Listner {
                 botStart.start(bot, msg);
                 break;
               default:
-                let user = {};
-                user.name = msg.text;
-                userInfo.set(id, user);
+                let regUser = {};
+                regUser.name = msg.text;
+                regUserInfo.set(id, user);
                 botProfile.regCity(bot, msg);
                 break;
             }
@@ -62,9 +65,9 @@ class Listner {
                 botStart.start(bot, msg);
                 break;
               default:
-                var user = userInfo.get(id);
-                user.city = msg.text;
-                if (user === undefined) return;
+                var regUser = regUserInfo.get(id);
+                regUser.city = msg.text;
+                if (regUser === undefined) return;
                 await db.updateUser(
                   id,
                   msg.from.username,
@@ -79,14 +82,13 @@ class Listner {
           case state.profileRegPhoto:
             switch (msg.text) {
               default:
-                if (!msg.photo) {
-                  await bot.sendMessage(msg.chat.id, "Это не фото");
-                  return;
-                }
-                await botProfile.pic(bot, msg);
+              // if (!msg.photo) {
+              //   await bot.sendMessage(msg.chat.id, "Это не фото");
+              //   return;
+              // }
+              // await botProfile.pic(bot, msg);
               case "Пропустить":
-                const check = await db.getUser(id);
-                if (check[0].registered) {
+                if (user.user.registered) {
                   botProfile.start(bot, msg);
                   break;
                 } else {
@@ -226,13 +228,25 @@ class Listner {
             }
             break;
         }
-      } else if (msg.photo !== undefined) {
         ///
-        switch (check[0].state) {
+      } else if (msg.photo) {
+        switch (user.state) {
           case state.profileRegPhoto:
             await botProfile.pic(bot, msg);
             break;
+          case state.offerPhoto:
+            botOffer.repeatPhoto(bot, msg);
+            break;
+
+          case state.offerRepeatPhoto:
+            botOffer.repeatPhoto(bot, msg);
+            break;
+          default:
+            botExcept.fool(bot, msg);
+            break;
         }
+      } else {
+        botExcept.fool(bot, msg);
       }
     });
   }

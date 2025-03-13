@@ -10,9 +10,9 @@ class BotProfile {
     const user = await db.getUser(msg.from.id);
     await bot.sendPhoto(
       msg.chat.id,
-      path.join(process.env.IMAGES_PATH_PROFILE, user[0].image),
+      path.join(process.env.IMAGES_PATH_PROFILE, user.image),
       {
-        caption: `${user[0].name}, ${user[0].city}`,
+        caption: `${user.name}, ${user.city}`,
         reply_markup: {
           keyboard: [[{ text: "1" }, { text: "2" }, { text: "3" }]],
           resize_keyboard: true,
@@ -53,25 +53,32 @@ class BotProfile {
     });
   }
   async pic(bot, msg) {
-    const fileId = msg.photo.reduce((prev, current) =>
-      prev.file_size > current.file_size ? prev : current
-    ).file_id;
-    const fileInfo = await bot.getFile(fileId);
-    const fileUrl = `https://api.telegram.org/file/bot${process.env.BOT_TOKEN}/${fileInfo.file_path}`;
-    const response = await axios({
-      url: fileUrl,
-      method: "GET",
-      responseType: "arraybuffer",
-    });
-    const buffer = Buffer.from(response.data, "binary");
-
-    const fileName = `${Date.now()}-${msg.from.id}${path.extname(
-      fileInfo.file_path
-    )}`;
-    const savePath = path.join(process.env.IMAGES_PATH_PROFILE, fileName);
-    fs.writeFileSync(savePath, buffer);
-    await db.updateUserImage(msg.from.id, fileName);
-    await bot.sendMessage(msg.chat.id, "Изображение успешно загружено!");
+    try {
+      // Получаем file_id самого большого фото (наибольший размер файла)
+      const fileId = msg.photo.reduce((prev, current) =>
+        prev.file_size > current.file_size ? prev : current
+      ).file_id;
+      // Получаем информацию о файле
+      const fileInfo = await bot.getFile(fileId);
+      const fileUrl = `https://api.telegram.org/file/bot${process.env.BOT_TOKEN}/${fileInfo.file_path}`;
+      // Генерируем уникальное имя файла
+      const fileName = `${Date.now()}-${msg.from.id}${path.extname(
+        fileInfo.file_path
+      )}`;
+      // Добавляем!
+      await db.addImage(fileUrl, fileName);
+      // Обновляем изображение пользователя в базе данных
+      await db.updateUserImage(msg.from.id, fileName);
+      // Отправляем сообщение об успешной загрузке
+      await bot.sendMessage(msg.chat.id, "Изображение успешно загружено!");
+      this.start(bot, msg);
+    } catch (error) {
+      console.error("Ошибка в методе pic:", error);
+      await bot.sendMessage(
+        msg.chat.id,
+        "Произошла ошибка при загрузке изображения."
+      );
+    }
   }
 }
 

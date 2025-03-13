@@ -20,7 +20,7 @@ class BotMenu {
               {
                 text: "прекрасный сайт",
                 web_app: {
-                  url: process.env.WEBSITE_URL + `/${msg.from.id}`,
+                  url: process.env.WEBSITE_URL, //+ `/${msg.from.id}`,
                 },
               },
             ],
@@ -28,20 +28,6 @@ class BotMenu {
         },
       }
     );
-
-    if (msg?.web_app_data?.data) {
-      try {
-        const data = JSON.parse(msg?.web_app_data?.data);
-        if ((data.res = "сайт говно")) {
-          await bot.sendMessage(msg.chat.id, "сам ты говно");
-          setTimeout(async () => {
-            await bot.sendMessage(msg.chat.id, "ублюдок");
-          }, 1000);
-        }
-      } catch (e) {
-        console.log(e);
-      }
-    }
   }
 }
 
