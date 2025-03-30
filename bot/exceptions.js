@@ -8,5 +8,8 @@ class BotExcept {
   async notPhotoException(bot, msg) {
     await bot.sendMessage(msg.chat.id, "Это не фото!");
   }
+  async bdException(bot, msg) {
+    bot.sendMessage(msg.chat.id, "Похоже, что ноут с бд сейчас где-то не дома, попробуйте позже.");
+  }
 }
 module.exports = new BotExcept();

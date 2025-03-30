@@ -22,7 +22,7 @@ class BotOffer {
       );
     } catch (error) {
       console.error("Error in start:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 
@@ -47,7 +47,8 @@ class BotOffer {
       await bot.sendMessage(msg.chat.id, "Введите номер объявления");
     } catch (error) {
       console.error("Error in view:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
+
     }
   }
 
@@ -111,7 +112,7 @@ class BotOffer {
       await db.updateState(msg.from.id, state.offerViewOne);
     } catch (error) {
       console.error("Error in viewOne:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 
@@ -126,7 +127,7 @@ class BotOffer {
       });
     } catch (error) {
       console.error("Error in title:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 
@@ -144,7 +145,8 @@ class BotOffer {
       });
     } catch (error) {
       console.error("Error in price:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
+
     }
   }
 
@@ -167,7 +169,7 @@ class BotOffer {
       });
     } catch (error) {
       console.error("Error in info:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 
@@ -181,7 +183,7 @@ class BotOffer {
       await bot.sendMessage(msg.chat.id, "Отправьте фото");
     } catch (error) {
       console.error("Error in photo:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 
@@ -217,7 +219,7 @@ class BotOffer {
       );
     } catch (error) {
       console.error("Error in repeatPhoto:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 
@@ -246,7 +248,7 @@ class BotOffer {
       this.view(bot, msg);
     } catch (error) {
       console.error("Error in savePhoto:", error);
-      await bot.sendMessage(msg.chat.id, "Произошла ошибка, попробуйте снова.");
+      await exceptions.err(bot, msg);
     }
   }
 }

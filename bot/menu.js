@@ -1,9 +1,15 @@
+const exceptions = require("./exceptions");
 const db = require("./functions/eteractDB");
 const state = require("./state");
 
 class BotMenu {
   async start(bot, msg) {
+    try{
     await db.updateState(msg.from.id, state.menuStart);
+    } catch(e){
+      console.error(e);
+      exceptions.err(bot, msg);
+    }
     await bot.sendMessage(msg.chat.id, "Меню:", {
       reply_markup: {
         keyboard: [[{ text: "1" }, { text: "2" }, { text: "3" }]],

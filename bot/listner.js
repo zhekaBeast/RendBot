@@ -7,6 +7,7 @@ const botProfile = require("./profile");
 const botExcept = require("./exceptions");
 const state = require("./state");
 const isCommand = require("./functions/isCommand");
+const exceptions = require("./exceptions");
 var regUserInfo = new Map();
 class Listner {
   async start(bot) {
@@ -14,7 +15,14 @@ class Listner {
       console.log(msg);
       if (isCommand(msg.text)) return;
       const id = msg.from.id;
-      const user = await db.getUser(id);
+      var user;
+      try{
+        user = await db.getUser(id);
+      }catch(e){
+        console.log("Listner getUser error");
+        exceptions.bdException(bot, msg);
+        return;
+      }
       if (!user.exists) {
         botStart.start(bot, msg);
         return;
@@ -51,11 +59,16 @@ class Listner {
                 botStart.start(bot, msg);
                 break;
               default:
-                let regUser = {};
+                try{
+                var regUser = {};
                 regUser.name = msg.text;
-                regUserInfo.set(id, user);
+                regUserInfo.set(id, regUser);
                 botProfile.regCity(bot, msg);
                 break;
+              }catch(error){
+                console.error("Error in lisdtner reg:", error);
+                await bot.sendMessage(msg.chat.id, exceptions.err);
+              }
             }
             break;
 
@@ -65,34 +78,43 @@ class Listner {
                 botStart.start(bot, msg);
                 break;
               default:
+                try{
                 var regUser = regUserInfo.get(id);
                 regUser.city = msg.text;
-                if (regUser === undefined) return;
                 await db.updateUser(
                   id,
                   msg.from.username,
-                  user.name,
-                  user.city
+                  regUser.name,
+                  regUser.city
                 );
                 botProfile.regPhoto(bot, msg);
                 break;
+              }catch(error){
+                console.error("Error in listner reg:", error);
+                exceptions.err(bot, msg);
+              }
             }
             break;
 
           case state.profileRegPhoto:
             switch (msg.text) {
               default:
-              // if (!msg.photo) {
-              //   await bot.sendMessage(msg.chat.id, "Это не фото");
-              //   return;
-              // }
-              // await botProfile.pic(bot, msg);
+              if (!msg.photo) {
+                await bot.sendMessage(msg.chat.id, "Это не фото");
+                return;
+              }
+              
               case "Пропустить":
-                if (user.user.registered) {
+                if (user.registered) {
                   botProfile.start(bot, msg);
                   break;
                 } else {
+                  try{
                   db.regUser(id);
+                  }catch(e){
+                    console.error(e);
+                    exceptions.err(bot, msg);
+                  }
                   botMenu.start(bot, msg);
                   break;
                 }

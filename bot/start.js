@@ -1,10 +1,13 @@
 const db = require("./functions/eteractDB");
 const botProfile = require("./profile");
 const botMenu = require("./menu");
+const exceptions = require("./exceptions")
 class BotStart {
   async start(bot, msg) {
-    try {
-      const user = await db.getUser(msg.from.id);
+    var user;  
+    try{
+      user = await db.getUser(msg.from.id);
+    
       if (!user.exists || !user.registered) {
         if (!user.exists)
           db.createUser(msg.from.id, msg.from.username, msg.chat.id);
@@ -12,9 +15,12 @@ class BotStart {
         botProfile.register(bot, msg);
         return;
       }
+
       botMenu.start(bot, msg);
-    } catch (err) {
-      console.error("Start start:" + err);
+    } catch(e){
+      console.error("Start start error");
+      exceptions.bdException(bot,msg);
+      return;
     }
   }
 }
