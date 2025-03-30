@@ -1,8 +1,8 @@
 const db = require("./functions/eteractDB");
 const state = require("./state");
 const path = require("path");
-const fs = require("fs");
-const axios = require("axios");
+const exceptions = require("./exceptions");
+
 var imagesBuf = new Map();
 var offerBuf = new Map();
 
@@ -70,7 +70,6 @@ class BotOffer {
           resize_keyboard: true,
         },
       });
-
       const info = `${offer.title} - ${offer.price}₽\n${offer.info}`;
       if (offer.images.length === 0) {
         // Нет изображений

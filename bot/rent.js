@@ -1,5 +1,6 @@
 const db = require("./functions/eteractDB");
 const state = require("./state");
+const exceptions = require("./exceptions");
 
 class BotRent {
   async start(bot, msg) {

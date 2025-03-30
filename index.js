@@ -1,5 +1,6 @@
 //@ts-ignore
 require("dotenv").config();
+const logger = require('./logger');
 //@ts-ignore
 const TelegramBot = require("node-telegram-bot-api");
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
@@ -12,7 +13,7 @@ bot.onText(/\/start/, async (msg) => {
 });
 
 bot.onText(/\/test/, async (msg) => {
-  //db.updateOfferImages(23, ["1736173778359-954910884.jpg"]);
+  await bot.sendMessage(msg.chat.id, `${msg.from.id}`);
 });
 
 bot.onText(/\/site/, async (msg) => {

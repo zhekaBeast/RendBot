@@ -1,0 +1,346 @@
+2025-03-16 14:33:04 [info]: [object Object]
+2025-03-16 14:33:07 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-16 14:33:07 [error]: Start start error
+2025-03-16 14:34:08 [info]: [object Object]
+2025-03-16 14:34:11 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-16 14:34:11 [error]: Start start error
+2025-03-16 14:34:41 [info]: [object Object]
+2025-03-16 14:34:44 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-16 14:34:44 [error]: Start start error
+2025-03-16 14:41:36 [info]: [object Object]
+2025-03-16 14:41:40 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-16 14:41:40 [error]: Start start error
+2025-03-16 14:48:46 [info]: [object Object]
+2025-03-16 14:48:46 [info]: getUser:
+2025-03-16 14:48:46 [info]: [object Object]
+2025-03-16 14:48:46 [info]: updateState:
+2025-03-16 14:48:46 [info]: [object Object]
+2025-03-16 15:06:57 [info]: [object Object]
+2025-03-17 06:59:08 [info]: [object Object]
+2025-03-17 06:59:09 [info]: getUser:
+2025-03-17 06:59:09 [info]: [object Object]
+2025-03-17 06:59:09 [info]: updateState:
+2025-03-17 06:59:09 [info]: [object Object]
+2025-03-17 06:59:12 [info]: [object Object]
+2025-03-17 06:59:12 [info]: getUser:
+2025-03-17 06:59:12 [info]: [object Object]
+2025-03-17 06:59:12 [info]: updateState:
+2025-03-17 06:59:12 [info]: [object Object]
+2025-03-17 06:59:15 [info]: [object Object]
+2025-03-17 06:59:15 [info]: getUser:
+2025-03-17 06:59:15 [info]: [object Object]
+2025-03-17 06:59:15 [info]: updateState:
+2025-03-17 06:59:15 [info]: [object Object]
+2025-03-17 06:59:21 [info]: [object Object]
+2025-03-19 11:37:12 [info]: [object Object]
+2025-03-19 11:37:15 [info]: [object Object]
+2025-03-19 11:37:30 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 11:37:30 [error]: Start start error
+2025-03-19 11:38:21 [info]: [object Object]
+2025-03-19 14:27:10 [info]: [object Object]
+2025-03-19 14:27:13 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 14:27:13 [error]: Start start error
+2025-03-19 17:44:11 [info]: [object Object]
+2025-03-19 17:44:14 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 17:44:14 [error]: Start start error
+2025-03-19 17:44:22 [info]: [object Object]
+2025-03-19 17:44:25 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 17:44:25 [error]: Start start error
+2025-03-19 17:44:43 [info]: [object Object]
+2025-03-19 17:44:46 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 17:44:46 [error]: Start start error
+2025-03-19 17:44:51 [info]: [object Object]
+2025-03-19 17:44:55 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 17:44:55 [error]: Start start error
+2025-03-19 17:45:44 [info]: [object Object]
+2025-03-19 17:45:47 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-19 17:45:47 [error]: Start start error
+2025-03-19 17:47:31 [info]: [object Object]
+2025-03-19 17:47:32 [info]: getUser:
+2025-03-19 17:47:32 [info]: [object Object]
+2025-03-19 17:47:32 [info]: updateState:
+2025-03-19 17:47:32 [info]: [object Object]
+2025-03-19 17:47:53 [info]: [object Object]
+2025-03-19 17:47:55 [info]: getUser:
+2025-03-19 17:47:55 [info]: [object Object]
+2025-03-19 17:47:55 [info]: updateState:
+2025-03-19 17:47:55 [info]: [object Object]
+2025-03-19 17:48:01 [info]: [object Object]
+2025-03-19 17:48:01 [info]: getUser:
+2025-03-19 17:48:01 [info]: [object Object]
+2025-03-19 17:48:01 [info]: updateState:
+2025-03-19 17:48:01 [info]: [object Object]
+2025-03-19 17:48:03 [info]: [object Object]
+2025-03-19 17:48:03 [info]: getUser:
+2025-03-19 17:48:03 [info]: [object Object]
+2025-03-19 17:48:03 [info]: updateState:
+2025-03-19 17:48:03 [info]: [object Object]
+2025-03-19 17:48:04 [info]: [object Object]
+2025-03-19 17:48:04 [info]: getUser:
+2025-03-19 17:48:04 [info]: [object Object]
+2025-03-19 17:48:04 [info]: updateState:
+2025-03-19 17:48:04 [info]: [object Object]
+2025-03-19 17:48:08 [info]: [object Object]
+2025-03-19 17:48:08 [info]: getUser:
+2025-03-19 17:48:08 [info]: [object Object]
+2025-03-19 17:48:08 [info]: updateState:
+2025-03-19 17:48:08 [info]: [object Object]
+2025-03-20 07:23:53 [info]: [object Object]
+2025-03-20 07:24:11 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-20 07:24:11 [error]: Start start error
+2025-03-20 07:24:16 [info]: [object Object]
+2025-03-20 07:24:19 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-20 07:24:19 [error]: Start start error
+2025-03-20 07:24:34 [info]: [object Object]
+2025-03-20 07:24:37 [error]: Error in getUser: Error: HTTP error! Status: 500
+2025-03-20 07:24:37 [error]: Start start error
+2025-03-20 07:25:22 [info]: [object Object]
+2025-03-20 07:25:22 [info]: getUser:
+2025-03-20 07:25:22 [info]: [object Object]
+2025-03-20 07:25:22 [info]: updateState:
+2025-03-20 07:25:22 [info]: [object Object]
+2025-03-20 20:05:04 [info]: [object Object]
+2025-03-21 18:36:22 [info]: [object Object]
+2025-03-21 18:47:53 [info]: [object Object]
+2025-03-26 08:10:45 [error]: error: [polling_error] %j Error: EFATAL: Error: socket hang up
+2025-03-26 14:53:08 [info]: [object Object]
+2025-03-26 14:53:08 [info]: getUser:
+2025-03-26 14:53:08 [info]: [object Object]
+2025-03-26 14:53:09 [info]: updateState:
+2025-03-26 14:53:09 [info]: [object Object]
+2025-03-26 14:53:17 [info]: [object Object]
+2025-03-26 14:53:17 [info]: getUser:
+2025-03-26 14:53:17 [info]: [object Object]
+2025-03-26 14:53:17 [info]: updateState:
+2025-03-26 14:53:17 [info]: [object Object]
+2025-03-26 14:53:21 [info]: [object Object]
+2025-03-26 14:53:21 [info]: getUser:
+2025-03-26 14:53:21 [info]: [object Object]
+2025-03-26 14:53:21 [info]: updateState:
+2025-03-26 14:53:21 [info]: [object Object]
+2025-03-26 14:53:24 [info]: [object Object]
+2025-03-26 14:53:24 [info]: getUser:
+2025-03-26 14:53:24 [info]: [object Object]
+2025-03-26 14:53:24 [info]: updateState:
+2025-03-26 14:53:24 [info]: [object Object]
+2025-03-26 14:53:24 [info]: getOfferByUser:
+2025-03-26 14:53:24 [info]: [object Object],[object Object],[object Object],[object Object],[object Object]
+2025-03-26 14:53:27 [info]: [object Object]
+2025-03-26 14:53:27 [info]: getUser:
+2025-03-26 14:53:27 [info]: [object Object]
+2025-03-26 14:53:27 [info]: getOffer:
+2025-03-26 14:53:27 [info]: [object Object]
+2025-03-26 14:53:27 [error]: (node:452873) [node-telegram-bot-api] DeprecationWarning: In the future, content-type of files you send will default to "application/octet-stream". See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files for more information on how sending files has been improved and on how to disable this deprecation message altogether.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-03-26 14:53:27 [error]: (node:452873) [DEP0044] DeprecationWarning: The `util.isArray` API is deprecated. Please use `Array.isArray()` instead.
+2025-03-26 14:53:28 [error]: Error in viewOne: Error: ETELEGRAM: 400 Bad Request: message caption is too long
+2025-03-26 14:54:49 [info]: [object Object]
+2025-03-26 14:54:50 [info]: getUser:
+2025-03-26 14:54:50 [info]: [object Object]
+2025-03-26 14:54:50 [info]: updateState:
+2025-03-26 14:54:50 [info]: [object Object]
+2025-03-26 14:54:52 [info]: [object Object]
+2025-03-26 14:54:52 [info]: getUser:
+2025-03-26 14:54:52 [info]: [object Object]
+2025-03-26 14:54:52 [info]: updateState:
+2025-03-26 14:54:52 [info]: [object Object]
+2025-03-26 14:54:53 [info]: getOfferByUser:
+2025-03-26 14:54:53 [info]: [object Object],[object Object],[object Object],[object Object],[object Object]
+2025-03-26 14:54:56 [info]: [object Object]
+2025-03-26 14:54:56 [info]: getUser:
+2025-03-26 14:54:56 [info]: [object Object]
+2025-03-26 14:54:56 [info]: getOffer:
+2025-03-26 14:54:56 [info]: [object Object]
+2025-03-26 14:54:56 [error]: (node:787990) [node-telegram-bot-api] DeprecationWarning: In the future, content-type of files you send will default to "application/octet-stream". See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files for more information on how sending files has been improved and on how to disable this deprecation message altogether.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-03-26 14:54:56 [error]: (node:787990) [DEP0044] DeprecationWarning: The `util.isArray` API is deprecated. Please use `Array.isArray()` instead.
+2025-03-26 14:54:58 [info]: updateState:
+2025-03-26 14:54:58 [info]: [object Object]
+2025-03-26 14:55:06 [info]: [object Object]
+2025-03-26 14:55:06 [info]: getUser:
+2025-03-26 14:55:06 [info]: [object Object]
+2025-03-26 14:55:06 [info]: updateState:
+2025-03-26 14:55:06 [info]: [object Object]
+2025-03-26 14:55:06 [info]: getOfferByUser:
+2025-03-26 14:55:06 [info]: [object Object],[object Object],[object Object],[object Object],[object Object]
+2025-03-26 14:55:09 [info]: [object Object]
+2025-03-26 14:55:09 [info]: getUser:
+2025-03-26 14:55:09 [info]: [object Object]
+2025-03-26 14:55:09 [info]: getOffer:
+2025-03-26 14:55:09 [info]: [object Object]
+2025-03-26 14:55:09 [info]: updateState:
+2025-03-26 14:55:09 [info]: [object Object]
+2025-03-26 14:55:12 [info]: [object Object]
+2025-03-26 14:55:12 [info]: getUser:
+2025-03-26 14:55:12 [info]: [object Object]
+2025-03-26 14:55:13 [info]: updateState:
+2025-03-26 14:55:13 [info]: [object Object]
+2025-03-26 14:55:13 [info]: getOfferByUser:
+2025-03-26 14:55:13 [info]: [object Object],[object Object],[object Object],[object Object],[object Object]
+2025-03-26 14:55:15 [info]: [object Object]
+2025-03-26 14:55:15 [info]: getUser:
+2025-03-26 14:55:15 [info]: [object Object]
+2025-03-26 14:55:15 [info]: getOffer:
+2025-03-26 14:55:15 [info]: [object Object]
+2025-03-26 14:55:15 [info]: updateState:
+2025-03-26 14:55:15 [info]: [object Object]
+2025-03-26 14:55:17 [info]: [object Object]
+2025-03-26 14:55:17 [info]: getUser:
+2025-03-26 14:55:17 [info]: [object Object]
+2025-03-26 14:55:17 [info]: updateState:
+2025-03-26 14:55:17 [info]: [object Object]
+2025-03-26 14:55:17 [info]: getOfferByUser:
+2025-03-26 14:55:17 [info]: [object Object],[object Object],[object Object],[object Object],[object Object]
+2025-03-26 14:55:20 [info]: [object Object]
+2025-03-26 14:55:20 [info]: getUser:
+2025-03-26 14:55:20 [info]: [object Object]
+2025-03-26 14:55:20 [info]: getOffer:
+2025-03-26 14:55:20 [info]: [object Object]
+2025-03-26 14:55:20 [error]: Error in viewOne: Error: ETELEGRAM: 400 Bad Request: message caption is too long
+2025-03-26 14:56:02 [info]: [object Object]
+2025-03-26 14:56:03 [info]: getUser:
+2025-03-26 14:56:03 [info]: [object Object]
+2025-03-26 14:56:03 [info]: updateState:
+2025-03-26 14:56:03 [info]: [object Object]
+2025-03-26 15:03:18 [info]: [object Object]
+2025-03-26 15:03:19 [info]: getUser:
+2025-03-26 15:03:19 [info]: [object Object]
+2025-03-26 15:03:19 [info]: updateState:
+2025-03-26 15:03:19 [info]: [object Object]
+2025-03-26 15:03:26 [info]: [object Object]
+2025-03-26 15:03:26 [info]: getUser:
+2025-03-26 15:03:26 [info]: [object Object]
+2025-03-26 15:03:26 [info]: updateState:
+2025-03-26 15:03:26 [info]: [object Object]
+2025-03-26 15:03:34 [info]: [object Object]
+2025-03-26 15:03:34 [info]: getUser:
+2025-03-26 15:03:34 [info]: [object Object]
+2025-03-26 15:03:34 [info]: updateState:
+2025-03-26 15:03:34 [info]: [object Object]
+2025-03-26 15:03:43 [info]: [object Object]
+2025-03-26 15:03:43 [info]: getUser:
+2025-03-26 15:03:43 [info]: [object Object]
+2025-03-26 15:03:43 [info]: updateState:
+2025-03-26 15:03:43 [info]: [object Object]
+2025-03-26 15:04:06 [info]: [object Object]
+2025-03-26 15:04:06 [info]: getUser:
+2025-03-26 15:04:06 [info]: [object Object]
+2025-03-26 15:04:06 [info]: updateState:
+2025-03-26 15:04:06 [info]: [object Object]
+2025-03-26 15:04:09 [info]: [object Object]
+2025-03-26 15:04:09 [info]: getUser:
+2025-03-26 15:04:09 [info]: [object Object]
+2025-03-26 15:04:09 [error]: Error in createOffer: Error: HTTP error! Status: 500
+2025-03-26 15:05:45 [info]: [object Object]
+2025-03-26 15:05:45 [info]: [object Object]
+2025-03-26 15:05:46 [info]: getUser:
+2025-03-26 15:05:46 [info]: [object Object]
+2025-03-26 15:05:46 [info]: getUser:
+2025-03-26 15:05:46 [info]: [object Object]
+2025-03-26 15:05:46 [error]: Error in savePhoto: TypeError: imagesBuf.get is not a function or its return value is not iterable
+2025-03-26 15:05:46 [info]: updateState:
+2025-03-26 15:05:46 [info]: [object Object]
+2025-03-26 15:06:34 [info]: [object Object]
+2025-03-26 15:06:35 [info]: getUser:
+2025-03-26 15:06:35 [info]: [object Object]
+2025-03-26 15:06:35 [info]: updateState:
+2025-03-26 15:06:35 [info]: [object Object]
+2025-03-26 15:06:39 [info]: [object Object]
+2025-03-26 15:06:39 [info]: getUser:
+2025-03-26 15:06:39 [info]: [object Object]
+2025-03-26 15:06:39 [info]: updateState:
+2025-03-26 15:06:39 [info]: [object Object]
+2025-03-26 15:06:40 [info]: [object Object]
+2025-03-26 15:06:41 [info]: getUser:
+2025-03-26 15:06:41 [info]: [object Object]
+2025-03-26 15:06:41 [info]: updateState:
+2025-03-26 15:06:41 [info]: [object Object]
+2025-03-26 15:06:44 [info]: [object Object]
+2025-03-26 15:06:44 [info]: getUser:
+2025-03-26 15:06:44 [info]: [object Object]
+2025-03-26 15:06:44 [info]: updateState:
+2025-03-26 15:06:44 [info]: [object Object]
+2025-03-26 15:06:50 [info]: [object Object]
+2025-03-26 15:06:50 [info]: getUser:
+2025-03-26 15:06:50 [info]: [object Object]
+2025-03-26 15:06:50 [info]: updateState:
+2025-03-26 15:06:50 [info]: [object Object]
+2025-03-26 15:06:56 [info]: [object Object]
+2025-03-26 15:06:56 [info]: getUser:
+2025-03-26 15:06:56 [info]: [object Object]
+2025-03-26 15:06:56 [info]: updateState:
+2025-03-26 15:06:56 [info]: [object Object]
+2025-03-26 15:07:04 [info]: [object Object]
+2025-03-26 15:07:04 [info]: getUser:
+2025-03-26 15:07:04 [info]: [object Object]
+2025-03-26 15:07:04 [info]: updateState:
+2025-03-26 15:07:04 [info]: [object Object]
+2025-03-26 15:07:07 [info]: [object Object]
+2025-03-26 15:07:07 [info]: getUser:
+2025-03-26 15:07:07 [info]: [object Object]
+2025-03-26 15:07:07 [error]: Error in createOffer: Error: HTTP error! Status: 500
+2025-03-26 15:07:07 [error]: Error in savePhoto: Error: HTTP error! Status: 500
+2025-03-26 15:08:17 [info]: [object Object]
+2025-03-26 15:08:18 [info]: getUser:
+2025-03-26 15:08:18 [info]: [object Object]
+2025-03-26 15:08:18 [info]: updateState:
+2025-03-26 15:08:18 [info]: [object Object]
+2025-03-28 14:23:19 [error]: error: [polling_error] %j Error: EFATAL: Error: read ETIMEDOUT
+2025-03-30 12:18:36 [info]: [object Object]
+2025-03-30 12:18:36 [info]: getUser:
+2025-03-30 12:18:36 [info]: [object Object]
+2025-03-30 12:18:36 [info]: updateState:
+2025-03-30 12:18:36 [info]: [object Object]
+2025-03-30 12:18:36 [info]: getOfferByUser:
+2025-03-30 12:18:36 [info]: 
+2025-03-30 12:18:41 [info]: [object Object]
+2025-03-30 12:18:41 [info]: getUser:
+2025-03-30 12:18:41 [info]: [object Object]
+2025-03-30 12:18:41 [info]: updateState:
+2025-03-30 12:18:41 [info]: [object Object]
+2025-03-30 12:18:44 [info]: [object Object]
+2025-03-30 12:18:45 [info]: getUser:
+2025-03-30 12:18:45 [info]: [object Object]
+2025-03-30 12:18:45 [info]: updateState:
+2025-03-30 12:18:45 [info]: [object Object]
+2025-03-30 12:18:57 [info]: [object Object]
+2025-03-30 12:18:58 [info]: getUser:
+2025-03-30 12:18:58 [info]: [object Object]
+2025-03-30 12:18:58 [info]: updateState:
+2025-03-30 12:18:58 [info]: [object Object]
+2025-03-30 12:19:28 [info]: [object Object]
+2025-03-30 12:19:28 [info]: getUser:
+2025-03-30 12:19:28 [info]: [object Object]
+2025-03-30 12:19:28 [info]: updateState:
+2025-03-30 12:19:28 [info]: [object Object]
+2025-03-30 12:19:35 [info]: [object Object]
+2025-03-30 12:19:35 [info]: getUser:
+2025-03-30 12:19:35 [info]: [object Object]
+2025-03-30 12:19:35 [info]: updateState:
+2025-03-30 12:19:35 [info]: [object Object]
+2025-03-30 12:21:11 [info]: [object Object]
+2025-03-30 12:21:12 [info]: getUser:
+2025-03-30 12:21:12 [info]: [object Object]
+2025-03-30 12:21:12 [info]: updateState:
+2025-03-30 12:21:12 [info]: [object Object]
+2025-03-30 12:21:15 [info]: [object Object]
+2025-03-30 12:21:15 [info]: getUser:
+2025-03-30 12:21:15 [info]: [object Object]
+2025-03-30 12:21:16 [info]: createOffer:
+2025-03-30 12:21:16 [info]: [object Object]
+2025-03-30 12:21:16 [info]: updateOfferImages:
+2025-03-30 12:21:16 [info]: [object Object]
+2025-03-30 12:21:16 [info]: updateState:
+2025-03-30 12:21:16 [info]: [object Object]
+2025-03-30 12:21:16 [info]: getOfferByUser:
+2025-03-30 12:21:16 [info]: [object Object]
+2025-03-30 12:21:27 [info]: [object Object]
+2025-03-30 12:21:27 [info]: getUser:
+2025-03-30 12:21:27 [info]: [object Object]
+2025-03-30 12:21:27 [info]: getOffer:
+2025-03-30 12:21:27 [info]: [object Object]
+2025-03-30 12:21:27 [error]: (node:793572) [node-telegram-bot-api] DeprecationWarning: In the future, content-type of files you send will default to "application/octet-stream". See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files for more information on how sending files has been improved and on how to disable this deprecation message altogether.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-03-30 12:21:27 [error]: (node:793572) [DEP0044] DeprecationWarning: The `util.isArray` API is deprecated. Please use `Array.isArray()` instead.
+2025-03-30 12:21:28 [info]: updateState:
+2025-03-30 12:21:28 [info]: [object Object]
