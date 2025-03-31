@@ -7,7 +7,6 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 const listner = require("./bot/listner");
 const botStart = require("./bot/start");
 const express = require("express");
-const cors = require("cors");
 
 listner.start(bot);
 
@@ -35,12 +34,9 @@ bot.onText(/\/site/, async (msg) => {
 });
 
 const PORT = process.env.PORT || 8420;
-
 const app = express();
-
 app.use(express.json()); // Middleware для парсинга JSON
-
-app.post("/send", async (req, res) => {
+app.post("/", async (req, res) => {
   try {
     const { chat_id, text } = req.body; // Получаем chat_id и text из тела запроса
 
@@ -56,5 +52,4 @@ app.post("/send", async (req, res) => {
     res.status(500).json({ message: "Ошибка сервера!" });
   }
 });
-
 app.listen(PORT, "localhost", () => console.log(`server started on ${PORT}`));
