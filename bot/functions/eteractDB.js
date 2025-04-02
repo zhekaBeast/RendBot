@@ -4,7 +4,7 @@ const path = require("path");
 class db {
   //-----------
   //User things
-  //----------
+  //-----------
   async getUser(tg_id) {
     try {
       const response = await fetch(api + "/getUser/" + tg_id);
@@ -118,7 +118,7 @@ class db {
 
   //-----------
   //Offer things
-  //----------
+  //-----------
   async getOfferByUser(tg_id) {
     try {
       const response = await fetch(api + "/getOfferByUser/" + tg_id);
@@ -209,7 +209,7 @@ class db {
 
   //-----------
   //Image things
-  //----------
+  //-----------
   async updateUserImage(tg_id, image) {
     const imageData = {
       tg_id: tg_id,
@@ -300,6 +300,90 @@ class db {
     } catch (error) {
       console.error("Error in uploadImageToAPI:", error);
       throw error; // Пробрасываем ошибку выше
+    }
+  }
+
+  //-----------
+  //Rent things
+  //-----------
+  async getRentsByUser(tg_id) {
+    try {
+      const response = await fetch(`${api}getRentsByUser/${tg_id}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error in getOfferDays:", error);
+      throw error;
+    }
+  }
+  async getRentsByOwner(tg_id) {
+    try {
+      const response = await fetch(`${api}getRentsByOwner/${tg_id}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error in getOfferDays:", error);
+      throw error;
+    }
+  }
+  async acceptRent(rent) {
+    try {
+      const response = await fetch(`${api}acceptRent/${rent.id}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error in getOfferDays:", error);
+      throw error;
+    }
+  }
+  async closeRent(rent) {
+    try {
+      const response = await fetch(`${api}closeRent/${rent.id}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error in getOfferDays:", error);
+      throw error;
+    }
+  }
+
+  //-----------
+  //Message!
+  //-----------
+  async sendMessage(tg_id, text) {
+    try {
+      const url = `${api}tgMessage`;
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Говорим серверу, что отправляем JSON
+        },
+        body: JSON.stringify({
+          // Преобразуем данные в JSON
+          tg_id: tg_id,
+          text: text,
+        }),
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error in createRent:", error);
+      throw error;
     }
   }
 }
